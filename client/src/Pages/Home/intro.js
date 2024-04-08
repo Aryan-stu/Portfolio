@@ -1,6 +1,6 @@
 import React from "react";
 import {useSelector} from "react-redux";
-import Image from 'f:/Projects/Portfolio/client/src/Pages/Home/me.png';
+
 
 function Intro() {
     const { loading, portfolioData } = useSelector((state) => state.root);
@@ -20,7 +20,7 @@ function Intro() {
 
                     </div>
                     <div className="w-1/2 sm:w-full flex items-end justify-center relative">
-                        <img className="w-full h-auto z-10 relative" src={Image} alt="me" />
+                        <img className="w-full h-auto z-10 relative" src={https://imgur.com/a/XUYgK4q} alt="me" />
                     </div>
                 </div>
             </div>

@@ -5,7 +5,7 @@ import {useSelector} from "react-redux";
 function Intro() {
     const { loading, portfolioData } = useSelector((state) => state.root);
     const {intro} = portfolioData;
-    const {firstName, lastName, welcomeText, description, caption} = intro;
+    const {firstName, lastName, welcomeText, description, caption} = intro ||{};
     return (
         <div className="relative  bg-primary">
           

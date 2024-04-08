@@ -6,8 +6,8 @@
   "version": "1.0.0",
   "main": "index.js",
   "engines":{
-    "node":"20.11.1",
-    "npm":"10.5.0"
+    "node":"^20.11.1",
+    "npm":"^10.5.0"
   },
   "dependencies": {
     "ansi-regex": "^6.0.1",
@@ -103,7 +103,10 @@
     "wrap-ansi-cjs": "^7.0.0",
     "yaml": "^2.4.1"
   },
-
+  "scripts": {
+    "test": "echo\"Error:  no test\" && exit 1",
+    "start": "nodemon server.js"
+  },
   "author": "",
   "license": "ISC",
   "description": ""

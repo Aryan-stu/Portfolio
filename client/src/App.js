@@ -42,7 +42,7 @@ function App() {
     <BrowserRouter>
       {loading ? <Loader /> : null}
       <Routes>
-        <Route path='/portfolio' element={<Home />} />
+        <Route path='/' element={<Home />} />
         <Route path='/admin' element={<Admin />} />
         <Route path='/admin-login' element={<Login />} />
       </Routes>

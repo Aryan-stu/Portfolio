@@ -4,7 +4,7 @@ const dbConfig = require("./config/dbconfig");
 const app = express();
 
 
-const portfolioRoute = require("../Portfolio/routes/portfolioRoutes");
+const portfolioRoute = require("./routes/portfolioRoutes");
 app.use(express.json());
 app.use("/api/portfolio", portfolioRoute);
 

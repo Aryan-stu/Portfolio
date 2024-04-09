@@ -4,7 +4,8 @@ const mongoose = require('mongoose');
 const mongoURI = process.env.mongo_url;
 
 // Connect to MongoDB
-mongoose.connect(mongoURI);
+mongoose.connect(mongoURI, { useNewUrlParser: true, useUnifiedTopology: true });
+
 
 
 const connection = mongoose.connection;

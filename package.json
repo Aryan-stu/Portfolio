@@ -6,8 +6,8 @@
   "version": "1.0.0",
   "main": "index.js",
   "engines":{
-    "node":"^20.11.1",
-    "npm":"^10.5.0"
+    "node":"20.11.1",
+    "npm":"10.5.0"
   },
   "dependencies": {
     "ansi-regex": "^6.0.1",
@@ -104,9 +104,13 @@
     "yaml": "^2.4.1"
   },
   "scripts": {
-    "test": "echo\"Error:  no test\" && exit 1",
-    "start": "nodemon server.js"
-  },
+    "client-install": "npm install --prefix client",
+    "server":"nodemon server.js",
+    "client": "npm start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "start": "node server.js",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client"
+},
   "author": "",
   "license": "ISC",
   "description": ""

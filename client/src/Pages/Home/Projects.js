@@ -11,7 +11,7 @@ function Projects() {
         <div>
             <SectionTitle title="Projects" />
             <div className=" flex py-10 gap-20 md:flex-col">
-                <div className="flex flex-col gap-10 md:gap-5 border-l-2 border-[#fba66a] w-2/5 md:flex-row md:overflow-x-scroll md:w-full">
+                <div className="flex flex-col gap-10 md:gap-5 border-l-2 border-[#fad939] w-2/5 md:flex-row md:overflow-x-scroll md:w-full">
                     {projects.map((projects, index) => (
                         <div onClick={() => {
                             setSelectedItemIndex(index);
@@ -20,7 +20,7 @@ function Projects() {
                         >
                             <h1 className={`text-xl px-4 justify-center items-center w-max
                             ${selectedItemIndex === index
-                                    ? 'text-tertiary border-tertiary border-l-4 -ml-[3px] md:ml-0 bg-[#f9741634] py-3 md:w-max'
+                                    ? 'text-tertiary border-tertiary border-l-4 -ml-[3px] md:ml-0 bg-[#fada393c] py-3 md:w-max'
                                     : 'text-white py-3'
                                 }`}
                             >

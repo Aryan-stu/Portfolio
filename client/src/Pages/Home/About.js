@@ -27,12 +27,12 @@ function About() {
                 </div>
             </div>
             <div className="py-5 w-full">
-                <h1 className="text-tertiary text-xl w-full"> Here are few technologies I been working with:
+                <h1 className="text-secondary text-xl w-full"> Here are few technologies I been working with:
                 </h1>
                 <div className="flex flex-wrap gap-10 mt-5">
                     {skills.map((skills, index) => (
-                        <div className="border border-tertiary py-3 px-10">
-                            <h1 className="text-tertiary">{skills}</h1>
+                        <div className="border border-secondary py-3 px-10">
+                            <h1 className="text-secondary">{skills}</h1>
                         </div>
                     ))}
                 </div>

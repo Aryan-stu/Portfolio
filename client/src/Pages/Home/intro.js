@@ -20,7 +20,7 @@ function Intro() {
 
                     </div>
                     <div className="w-1/2 sm:w-full flex items-end justify-center relative">
-                        <img className="w-full h-auto z-10 relative" src="https://i.imgur.com/wKvPZc2.png" alt="me" />
+                        <img className="w-full h-auto z-10 relative" src="https://i.imgur.com/txLNLCt.png" alt="me" />
                     </div>
                 </div>
             </div>

@@ -31,15 +31,13 @@ function Projects() {
 
                     ))}
                 </div>
-                <div className="flex items-center justify-center gap-10 md:flex-col">
-                <img src={projects[selectedItemIndex].image} alt="" className="h-64 w-auto" />
+                <div className="flex-col items-center justify-center gap-10 md:flex-col">
+                    <div className="flex justify-center">
+                <img src={projects[selectedItemIndex].image} alt="" className=" max-h-64 h-auto w-auto  mb-5" /></div>
                     <div className="flex flex-col gap-5">
                         <h1 className="text-secondary text-2xl font-semibold">{projects[selectedItemIndex].title}</h1>
                         <p className="text-white">{projects[selectedItemIndex].description}</p>
-                        <p className="text-white">
-                            Finished three Python projects given by the HRs within a given period. Passed on three different criteria with my published packets on the company server.
-                            Worked on given projects and completed them before 50% of the other interns.
-                        </p>
+                        
                     </div>
                     
                 </div>

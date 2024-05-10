@@ -12,7 +12,7 @@ function Experiences() {
         <div className="bg-primary">
             <SectionTitle title="Experience" />
             <div className=" flex py-10 gap-20 md:flex-col">
-                <div className="flex flex-col gap-10 border-l-2 border-[#fad939] w-1/3 md:flex-row md:overflow-x-scroll md:w-full">
+                <div className="flex flex-col gap-10 border-l-2 border-[#fad939] w-2/5 md:flex-row md:overflow-x-scroll md:w-full">
                     {experiences.map((experience, index) => (
                         <div onClick={() => {
                             setSelectedItemIndex(index);
